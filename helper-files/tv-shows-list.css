@@ -1,0 +1,13 @@
+.container {
+  margin-top: 80px;
+}
+img {
+  max-width: 100%;
+  cursor: pointer;
+}
+.tv-show:nth-child(3n+1) {
+  clear:both;
+}
+ul {
+  margin-top: 20px;
+}
