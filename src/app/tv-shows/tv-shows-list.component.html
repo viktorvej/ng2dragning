@@ -1,0 +1,28 @@
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12">
+      <button [routerLink]="['/tv-shows/add']" class="btn btn-primary">
+        Add Show
+      </button>
+    </div>
+  </div>
+  <hr>
+  <div class="row">
+    <div *ngFor="let tvShow of tvShows" class="col-sm-4 tv-show">
+      <ul class="list-unstyled">
+        <li><img [src]="tvShow.imgUrl" [routerLink]="['/tv-shows/', tvShow.id]"></li>
+        <li>&nbsp;</li>
+        <li>
+          <strong>Title:</strong> {{tvShow.title}}
+        </li>
+        <li>
+          <strong>Genre:</strong> {{tvShow.genre}}
+        </li>
+        <li>
+          <strong>Rating:</strong> {{tvShow.rating}}
+        </li>
+        <li>&nbsp;</li>
+      </ul>
+    </div>
+  </div>
+</div>

@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'books-app',
+  selector: 'my-imdb-app',
   template: `
-    <h1>Hello {{name}}</h1>
-    <books></books>
+    <my-imdb-nav></my-imdb-nav>
+    <router-outlet></router-outlet>
   `,
 })
-export class AppComponent  { name = 'Books'; }
+export class AppComponent  { 
+
+}
